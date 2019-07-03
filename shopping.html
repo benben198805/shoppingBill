@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="utf-8">
 	<title>Welcome to no money to earn store</title>
-	
 </head>
-<body>
 
+<body>
 	<p>***********<没钱赚商店>购物清单***********</p>
 	<p id="productdetail"></p>
 	<p>---------------------------------------</p>
@@ -14,7 +14,17 @@
 	<p>---------------------------------------</p>
 	<p id="total"></p>
 	<p>***************欢迎下次光临***************</p>
-
 </body>
-<script type="text/javascript" src="./javaScript/shopping.js"></script>
+<script type="text/javascript" src="./javaScript/Product.js"></script>
+<script type="text/javascript" src="./javaScript/NormalStrategy.js"></script>
+<script type="text/javascript" src="./javaScript/GiftStrategy.js"></script>
+<script type="text/javascript" src="./javaScript/DiscountStrategy.js"></script>
+<script type="text/javascript" src="./javaScript/Store.js"></script>
+<script type="text/javascript">
+	var order = ["ITEM000001", "ITEM000001", "ITEM000001", "ITEM000002-5", "ITEM000003-2", "ITEM000003", "ITEM000004"];
+	const store = new Store();
+	store.processShoppingCart(order);
+	store.printBill();
+</script>
+
 </html>
